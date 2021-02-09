@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript #1</title>
+    <meta charset="ut-8"></meta>
+    <script defer src="myScript.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      img {
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">
+      <h1>NFL Game</h1>
+
+      <br />
+
+      <div class="names">
+        <h2>Your Information:</h2>
+        <input id="fname" name="fname" type="text" placeholder="First Name" required="" />
+        <input id="lname" name="lname" type="text" placeholder="Last Name" required="" />
+      </div>
+
+      <br />
+
+      <div class="form cf">
+        <div class="team cf">
+          <h2>Your Favorite Team:</h2>
+          <div class="chiefs">
+            <input id="chiefs" name="team" value="chiefs" type="radio" onclick="changeBackground('team')" />
+            <label for="chiefs">Chiefs</label>
+          </div>
+          <div class="packers">
+            <input id="packers" name="team" value="packers" type="radio" onclick="changeBackground('team')" />
+            <label for="packers">Packers</label>
+          </div>
+          <div class="bills">
+            <input id="bills" name="team" value="bills" type="radio" onclick="changeBackground('team')" />
+            <label for="bills">Bills</label>
+          </div>
+          <div class="seahawks">
+            <input id="seahawks" name="team" value="seahawks" type="radio" onclick="changeBackground('team')" />
+            <label for="seahawks">Seahawks</label>
+          </div>
+          <div class="saints">
+            <input id="saints" name="team" value="saints" type="radio" onclick="changeBackground('team')" />
+            <label for="saints">Saints</label>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="players cf">
+          <h2>Your Favorite Players:</h2>
+          <div class="mahomes">
+            <input id="mahomes" name="player" value="mahomes" type="checkbox" onclick="changeBackground('player')" />
+            <label for="mahomes">Patrick Mahomes</label>
+          </div>
+          <div class="donald">
+            <input id="donald" name="player" value="donald" type="checkbox" onclick="changeBackground('player')" />
+            <label for="donald">Aaron Donald</label>
+          </div>
+          <div class="wilson">
+            <input id="wilson" name="player" value="wilson" type="checkbox" onclick="changeBackground('player')" />
+            <label for="wilson">Russell Wilson</label>
+          </div>
+          <div class="allen">
+            <input id="allen" name="player" value="allen" type="checkbox" onclick="changeBackground('player')" />
+            <label for="allen">Josh Allen</label>
+          </div>
+          <div class="jackson">
+            <input id="jackson" name="player" value="jackson" type="checkbox" onclick="changeBackground('player')" />
+            <label for="jackson">Lamar Jackson</label>
+          </div>
+          <div class="mccaffrey">
+            <input id="mccaffrey" name="player" value="mccaffrey" type="checkbox" onclick="changeBackground('player')" />
+            <label for="mccaffrey">Christian McCaffrey</label>
+          </div>
+          <div class="hopkins">
+            <input id="hopkins" name="player" value="hopkins" type="checkbox" onclick="changeBackground('player')" />
+            <label for="hopkins">DeAndre Hopkins</label>
+          </div>
+          <div class="kittle">
+            <input id="kittle" name="player" value="kittle" type="checkbox" onclick="changeBackground('player')" />
+            <label for="kittle">George Kittle</label>
+          </div>
+          <div class="rodgers">
+            <input id="rodgers" name="player" value="rodgers" type="checkbox" onclick="changeBackground('player')" />
+            <label for="rodgers">Aaron Rodgers</label>
+          </div>
+          <div class="kelce">
+            <input id="kelce" name="player" value="kelce" type="checkbox" onclick="changeBackground('player')" />
+            <label for="kelce">Travis Kelce</label>
+          </div>
+        </div>
+      </div>
+
+      <button onclick='myClick()'>Submit</button>
+
+    </div>
+  </body>
+</html>
